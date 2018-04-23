@@ -40,6 +40,23 @@ python manage.py
 
  runserver 运行项目 启动服务器
 ```
-
+启动djingo项目<br>
+```
+python manage.py runserver ip:端口
+```
+创建app <br>
+```
+python manage.py startapp app名字
+```
+app <br>
+```
+__init__.py:初始化
+admin.py:管理后台注册模型
+apps.py: settings.py里面注册app的时候需要使用到。一般不推荐这样使用
+from app.apps import AppConfig
+AppConfig.name
+models.py:写模型的地方
+views.py:写处理业务逻辑的地方
+```
 makemigrations 生成映射文件</br>
 migrate 执行映射文件
