@@ -1,45 +1,45 @@
 # django
-MVC(model, view, controller)
-MVC框架的核心:解耦
-降低各功能模块之间的耦合性，方便变更，更容易重构代码，最大程度上实现代码的重用
-model：数据库层的封装
-view：向用户展示结果
-controller：处理请求，获取数据，返回结果
+MVC(model, view, controller)</br>
+MVC框架的核心:解耦</br>
+降低各功能模块之间的耦合性，方便变更，更容易重构代码，最大程度上实现代码的重用</br>
+model：数据库层的封装</br>
+view：向用户展示结果</br>
+controller：处理请求，获取数据，返回结果</br>
 
-MVT(modle, view, template)
-mvt中的vt相当于mvc中的cv
-B/S 浏览器/服务器
-C/S 客服端/服务器
+MVT(modle, view, template)</br>
+mvt中的vt相当于mvc中的cv</br>
+B/S 浏览器/服务器</br>
+C/S 客服端/服务器</br>
 
-安装虚拟环境
+安装虚拟环境</br>
 pip install virtualenv
 
-在env文件夹中安装虚拟环境
+在env文件夹中安装虚拟环境</br>
 ```
 cd env
 virtualenv --no-site-packages testenv(如果版本只有一个3.x的)、
 virtualenv --no-site-packages -p 路径 testenv(指定安装的版本)
 ```
 
-进入虚拟环境
-cd testenv\Scripts>activate
-现在就可以安装我们需要的库了
-deactivate 退出虚拟环境
+进入虚拟环境</br>
+cd testenv\Scripts>activate </br>
+现在就可以安装我们需要的库了</br>
+deactivate 退出虚拟环境</br>
 
-安装django
+安装django</br>
 ```
 pip install django==1.11
 ```
-创建项目
+创建项目</br>
 ```
 django-admin startproject 名称
 ```
-修改setting里面的编码  为 zh-hands
+修改setting里面的编码  LANGUAGE_CODE = 'zh-hans' </br>
 ```
 python manage.py 
 
  runserver 运行项目 启动服务器
 ```
 
-makemigrations 生成映射文件
+makemigrations 生成映射文件</br>
 migrate 执行映射文件
