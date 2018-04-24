@@ -54,6 +54,9 @@ python manage.py runserver ip:端口
 初始化配置
 ```
 __init__.py 初始化，配置pymysql链接的地方
+ import pymysql
+ pymysql.install_as_MySQLdb()
+ 
 setting.py 配置信息位置，databases等
 urls.py url路由
 wsgi.py 网关
@@ -193,4 +196,12 @@ FileField
 ```
 ImageField()
  upload_to=''指定上传图片的路径
+```
+模型参数
+```
+default：默认
+null：设置是否为空，针对数据库中该字段是否可以为空
+blank：设置是否为空，针对表单提交该字段是否可以为空
+primary_key：创建主键
+unique:唯一
 ```
