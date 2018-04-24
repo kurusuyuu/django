@@ -165,14 +165,17 @@ BooleanField:布尔类型
 DateField():年月日，日期
  auto_now_add:第一次创建的时候赋值
  auto_now:每次修改的时候赋值
+DateTimeField:年月日时分秒
+ auto_now_add
+ auto_now
 ```
 自动增长
 ```
 AutoField
 ```
-指定参数有多少位，小数后有多少位
+成绩，存钱  指定参数有多少位，小数后有多少位
 ```
-DecimaField(max_digits=3,decimal_places=2)
+DecimaField(max_digits=3,decimal_places=1)最大值99.9
  max_digits=总位数
  decimal_places=小数后多少位
 ```
@@ -204,4 +207,9 @@ null：设置是否为空，针对数据库中该字段是否可以为空
 blank：设置是否为空，针对表单提交该字段是否可以为空
 primary_key：创建主键
 unique:唯一
+```
+网页模板templates
+```
+在settings.py里找到TEMPLATES
+将os.path.join(BASE_DIR,'templates')添加进'DIRS': []
 ```
