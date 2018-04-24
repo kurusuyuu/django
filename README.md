@@ -151,3 +151,46 @@ class StudentAdmin(admin.ModelAdmin):
 # 1. 注册的第一种方式
 # admin.site.register(Student,StudentAdmin)
 ```
+对象关系映射
+```
+ORM
+```
+模型字段
+```
+CharField():字符串
+BooleanField:布尔类型
+DateField():年月日，日期
+ auto_now_add:第一次创建的时候赋值
+ auto_now:每次修改的时候赋值
+```
+自动增长
+```
+AutoField
+```
+指定参数有多少位，小数后有多少位
+```
+DecimaField(max_digits=3,decimal_places=2)
+ max_digits=总位数
+ decimal_places=小数后多少位
+```
+存文本信息
+```
+TextField
+```
+整数
+```
+IntegerField
+```
+浮点数
+```
+FloatField
+```
+文件上传字段
+```
+FileField
+```
+上传图片
+```
+ImageField()
+ upload_to=''指定上传图片的路径
+```
