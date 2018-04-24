@@ -175,7 +175,7 @@ AutoField
 ```
 成绩，存钱  指定参数有多少位，小数后有多少位
 ```
-DecimaField(max_digits=3,decimal_places=1)最大值99.9
+DecimalField(max_digits=3,decimal_places=1)最大值99.9
  max_digits=总位数
  decimal_places=小数后多少位
 ```
