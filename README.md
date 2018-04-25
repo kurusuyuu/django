@@ -213,3 +213,13 @@ unique:唯一
 在settings.py里找到TEMPLATES
 将os.path.join(BASE_DIR,'templates')添加进'DIRS': []
 ```
+关联
+```
+1:1 OneToOneFirld
+1:N
+M:N
+```
+on_delete
+```
+默认cascade，主表删除
+```
